@@ -1,7 +1,6 @@
 import React from "react";
 import photo from "/dayal.png";
 import { Typewriter } from "react-simple-typewriter";
-import { Link } from "react-router";
 import { FaFacebookSquare, FaGithub } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
