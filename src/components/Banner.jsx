@@ -37,16 +37,16 @@ const Banner = () => {
             />
           </h2>
           <p className="text-[18px]">
-            I build responsive websites using React, Tailwind CSS, and
-            JavaScript. Currently expanding my skills in Node.js, MongoDB, and
-            full-stack development.
+            I specialize in building full-stack projects with Node.js, Express,
+            and MongoDB, delivering modern, scalable solutions.
           </p>
 
-          <div className="py-4 flex gap-5 text-[#068e79]">
+          <div className="py-4 flex gap-5 text-[#068e79] ">
             <a
               href="https://github.com/dayal-chandra"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:text-white"
             >
               <FaGithub size={35} />
             </a>
@@ -54,6 +54,7 @@ const Banner = () => {
               href="https://linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:text-white"
             >
               <IoLogoLinkedin size={35} />
             </a>
@@ -61,19 +62,20 @@ const Banner = () => {
               href="https://web.facebook.com/dayal.chandra.562"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:text-white"
             >
               <FaFacebookSquare size={35} />
             </a>
           </div>
           <div className="flex gap-5 pb-10">
             <Link to="contact" smooth={true} duration={500}>
-              <button className="flex justify-center items-center gap-1 btn text-[16px] border-[#068e79] bg-[#068e79] shadow-none">
+              <button className="flex justify-center items-center gap-1 btn text-[16px] text-white border-[#068e79] bg-[#068e79] hover:bg-transparent shadow-none">
                 <BsTelephone />
                 Contact
               </button>
             </Link>
             <a href="/dayal-cv.pdf" download>
-              <button className="flex justify-center items-center gap-1  btn text-[16px] shadow-none bg-transparent border border-[#068e79] text-[#068e79]">
+              <button className="flex justify-center items-center gap-1  btn text-[16px] shadow-none bg-transparent border border-[#068e79] text-[#068e79] hover:bg-[#068e79] hover:text-white">
                 <FiDownload /> Download CV
               </button>
             </a>

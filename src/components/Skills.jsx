@@ -95,7 +95,7 @@ const Skills = () => {
             {skill.map((talent, index) => (
               <SwiperSlide key={index} className="overflow-visible">
                 {" "}
-                <div className="flex flex-col items-center justify-center border border-[#068e79] shadow-md p-6 my-6 rounded-2xl hover:scale-105 transition-transform duration-300 w-60 h-60 mx-auto text-center">
+                <div className="flex flex-col items-center justify-center border border-[#068e79] hover:bg-[#068e7a2a] shadow-md p-6 my-6 rounded-2xl hover:scale-105 transition-transform duration-300 w-60 h-60 mx-auto text-center">
                   <div className="text-4xl mb-3 text-[#068e79]">
                     {talent.icon}
                   </div>

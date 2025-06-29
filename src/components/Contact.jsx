@@ -65,6 +65,7 @@ const Contact = () => {
               href="https://github.com/dayal-chandra"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:text-[#068e7aaf]"
             >
               <FaGithub size={35} />
             </a>
@@ -72,6 +73,7 @@ const Contact = () => {
               href="https://linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:text-[#068e7aaf]"
             >
               <IoLogoLinkedin size={35} />
             </a>
@@ -79,45 +81,25 @@ const Contact = () => {
               href="https://web.facebook.com/dayal.chandra.562"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:text-[#068e7aaf]"
             >
               <FaFacebookSquare size={35} />
             </a>
           </div>
           <div>
-            <a href="/dayal-cv.pdf" download>
-              <button className="flex justify-center items-center gap-1  btn text-[16px] shadow-none bg-transparent border border-[#068e79] text-[#068e79]">
+            <button className="  btn text-[16px] shadow-none bg-transparent border border-[#068e79] text-[#068e79] hover:text-white hover:bg-[#068e79]">
+              <a
+                className="flex justify-center items-center gap-1"
+                href="/dayal-cv.pdf"
+                download
+              >
                 <FiDownload /> Download CV
-              </button>
-            </a>
+              </a>
+            </button>
           </div>
         </div>
         <div className="border border-[#068e79] rounded-2xl w-full h-[336px] p-5">
           <h1 className="text-2xl font-bold pb-3">Mail Me</h1>
-          {/* <fieldset className="space-y-5">
-            <div className="flex flex-col gap-2">
-              <label>Email</label>
-              <input
-                className="border border-[#068e79] rounded-2xl pl-4 py-2 outline-none"
-                type="email"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
-            <div className="flex flex-col gap-2">
-              <label>Message</label>
-              <textarea
-                className="border border-[#068e79] rounded-2xl pl-4 py-2 outline-none"
-                name=""
-                id=""
-                placeholder="Your Message"
-              ></textarea>
-            </div>
-            <input
-              className="w-full bg-[#068e79] text-white p-2 rounded-2xl"
-              type="submit"
-              value="Submit"
-            />
-          </fieldset> */}
           <form onSubmit={sendEmail} className="flex flex-col gap-4">
             <input
               type="email"
@@ -126,7 +108,7 @@ const Contact = () => {
               required
               value={formData.user_email}
               onChange={handleChange}
-              className="border px-3 py-2 rounded"
+              className="border border-[#068e79] px-3 py-2 rounded"
             />
             <textarea
               name="message"
@@ -134,12 +116,12 @@ const Contact = () => {
               required
               value={formData.message}
               onChange={handleChange}
-              className="border px-3 py-2 rounded"
+              className="border border-[#068e79] px-3 py-2 rounded"
               rows="5"
             ></textarea>
             <button
               type="submit"
-              className="bg-[#068e79] text-white py-2 rounded hover:bg-[#056a5d] transition"
+              className="bg-[#068e79] text-white hover:text-[#068e79] py-2 rounded hover:bg-transparent border border-[#068e79] transition"
             >
               Submit
             </button>
