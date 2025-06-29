@@ -1,32 +1,88 @@
-import React from "react";
 import { TiThMenu } from "react-icons/ti";
 import { Link } from "react-scroll";
 
-const Navbar = () => {
+const Navbar = ({ activeRoute, setActiveRoute }) => {
+  const handleSetActive = (route) => {
+    setActiveRoute(route);
+  };
+
   const navItems = (
     <>
       <li>
-        <Link to="home" smooth={true} duration={500}>
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          onClick={() => handleSetActive("home")}
+          className={`cursor-pointer ${
+            activeRoute === "home" ? "text-[#39c2ae] border" : ""
+          }`}
+        >
           Home
         </Link>
       </li>
       <li>
-        <Link to="about" smooth={true} duration={500}>
+        <Link
+          to="about"
+          smooth={true}
+          duration={500}
+          onClick={() => handleSetActive("about")}
+          className={`cursor-pointer ${
+            activeRoute === "about" ? "text-[#39c2ae] border" : ""
+          }`}
+        >
           About Me
         </Link>
       </li>
       <li>
-        <Link to="skills" smooth={true} duration={500}>
+        <Link
+          to="skills"
+          smooth={true}
+          duration={500}
+          onClick={() => handleSetActive("skills")}
+          className={`cursor-pointer ${
+            activeRoute === "skills" ? "text-[#39c2ae] border" : ""
+          }`}
+        >
           Skills
         </Link>
       </li>
       <li>
-        <Link to="projects" smooth={true} duration={500}>
+        <Link
+          to="education"
+          smooth={true}
+          duration={500}
+          onClick={() => handleSetActive("education")}
+          className={`cursor-pointer ${
+            activeRoute === "education" ? "text-[#39c2ae] border" : ""
+          }`}
+        >
+          Education
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="projects"
+          smooth={true}
+          duration={500}
+          onClick={() => handleSetActive("projects")}
+          className={`cursor-pointer ${
+            activeRoute === "projects" ? "text-[#39c2ae] border" : ""
+          }`}
+        >
           Projects
         </Link>
       </li>
       <li>
-        <Link to="contact" smooth={true} duration={500}>
+        <Link
+          to="contact"
+          smooth={true}
+          duration={500}
+          onClick={() => handleSetActive("contact")}
+          className={`cursor-pointer ${
+            activeRoute === "contact" ? "text-[#39c2ae] border" : ""
+          }`}
+        >
           Contact
         </Link>
       </li>
@@ -71,6 +127,7 @@ const Navbar = () => {
             to="contact"
             smooth={true}
             duration={500}
+            onClick={() => handleSetActive("contact")}
           >
             Hire Me
           </Link>

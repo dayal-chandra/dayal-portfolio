@@ -7,7 +7,7 @@ import { BsTelephone } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
 import { Link } from "react-scroll";
 
-const Banner = () => {
+const Banner = ({ setActiveRoute }) => {
   return (
     <div
       id="home"
@@ -68,7 +68,12 @@ const Banner = () => {
             </a>
           </div>
           <div className="flex gap-5 pb-10">
-            <Link to="contact" smooth={true} duration={500}>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              onClick={() => setActiveRoute("contact")}
+            >
               <button className="flex justify-center items-center gap-1 btn text-[16px] text-white border-[#068e79] bg-[#068e79] hover:bg-transparent shadow-none">
                 <BsTelephone />
                 Contact
