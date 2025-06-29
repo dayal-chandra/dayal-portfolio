@@ -3,6 +3,7 @@ import { FaFacebookSquare, FaGithub } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FiDownload } from "react-icons/fi";
 import emailjs from "@emailjs/browser";
+import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -60,7 +61,7 @@ const Contact = () => {
             <span className="font-bold">Location :</span> Kurigram, Dhaka,
             Bangladesh
           </p>
-          <div className="py-4 flex gap-5 text-[#068e79]">
+          <div className="py-4 flex gap-5 justify-start items-center text-[#068e79]">
             <a
               href="https://github.com/dayal-chandra"
               target="_blank"
@@ -84,6 +85,13 @@ const Contact = () => {
               className="hover:text-[#068e7aaf]"
             >
               <FaFacebookSquare size={35} />
+            </a>
+
+            <a
+              href="mailto:dayalchandra511@gmail.com"
+              className="hover:text-[#068e7aaf]"
+            >
+              <MdEmail size={43} />
             </a>
           </div>
           <div>

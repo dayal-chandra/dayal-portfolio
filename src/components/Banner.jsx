@@ -6,6 +6,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
 import { Link } from "react-scroll";
+import { MdEmail } from "react-icons/md";
 
 const Banner = ({ setActiveRoute }) => {
   return (
@@ -41,7 +42,7 @@ const Banner = ({ setActiveRoute }) => {
             and MongoDB, delivering modern, scalable solutions.
           </p>
 
-          <div className="py-4 flex gap-5 text-[#068e79] ">
+          <div className="py-4 flex justify-start items-center gap-5 text-[#068e79] ">
             <a
               href="https://github.com/dayal-chandra"
               target="_blank"
@@ -65,6 +66,12 @@ const Banner = ({ setActiveRoute }) => {
               className="hover:text-white"
             >
               <FaFacebookSquare size={35} />
+            </a>
+            <a
+              href="mailto:dayalchandra511@gmail.com"
+              className="hover:text-white"
+            >
+              <MdEmail size={43} />
             </a>
           </div>
           <div className="flex gap-5 pb-10">
