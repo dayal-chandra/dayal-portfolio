@@ -7,11 +7,11 @@ import "swiper/css/pagination";
 import room1 from "/room1.png";
 import room2 from "/room2.png";
 import room3 from "/room3.png";
-import { Link } from "react-router";
 
 const Projects = () => {
   return (
     <div
+      id="projects"
       data-aos="fade-up"
       className="pt-16 max-w-[1280px] mx-auto px-5 md:px-0"
     >
@@ -21,21 +21,20 @@ const Projects = () => {
       <div className="w-full border border-[#068e79] rounded-2xl p-5 flex flex-col md:flex-row justify-center items-center gap-5">
         <div className="w-full md:w-1/2">
           <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
+            modules={[Pagination, Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
-            navigation
             pagination={{ clickable: true }}
             autoplay={{ delay: 2500, disableOnInteraction: false }}
           >
             <SwiperSlide>
-              <img src={room1} alt="" />
+              <img src={room1} alt="project slide" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={room2} alt="" />
+              <img src={room2} alt="project slide" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={room3} alt="" />
+              <img src={room3} alt="project slide" />
             </SwiperSlide>
           </Swiper>
         </div>

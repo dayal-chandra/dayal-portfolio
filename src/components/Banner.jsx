@@ -5,10 +5,14 @@ import { FaFacebookSquare, FaGithub } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
+import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
-    <div className="bg-[url(/bg.png)] bg-no-repeat bg-cover min-h-screen px-5 md:px-0">
+    <div
+      id="home"
+      className="bg-[url(/bg.png)] bg-no-repeat bg-cover min-h-screen px-5 md:px-0"
+    >
       <div className="max-w-[1280px] mx-auto flex flex-col-reverse md:flex-row justify-between in-center gap-10">
         <div
           data-aos="fade-up"
@@ -62,13 +66,17 @@ const Banner = () => {
             </a>
           </div>
           <div className="flex gap-5 pb-10">
-            <button className="flex justify-center items-center gap-1 btn text-[16px] border-[#068e79] bg-[#068e79] shadow-none">
-              <BsTelephone />
-              Contact
-            </button>
-            <button className="flex justify-center items-center gap-1  btn text-[16px] shadow-none bg-transparent border border-[#068e79] text-[#068e79]">
-              <FiDownload /> Download CV
-            </button>
+            <Link to="contact" smooth={true} duration={500}>
+              <button className="flex justify-center items-center gap-1 btn text-[16px] border-[#068e79] bg-[#068e79] shadow-none">
+                <BsTelephone />
+                Contact
+              </button>
+            </Link>
+            <a href="/dayal-cv.pdf" download>
+              <button className="flex justify-center items-center gap-1  btn text-[16px] shadow-none bg-transparent border border-[#068e79] text-[#068e79]">
+                <FiDownload /> Download CV
+              </button>
+            </a>
           </div>
         </div>
         <div data-aos="fade-up" className="w-full mt-20">

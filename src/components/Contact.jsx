@@ -1,12 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaFacebookSquare, FaGithub } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
-import { BsTelephone } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    user_email: "",
+    message: "",
+  });
+
+  const [successMsg, setSuccessMsg] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_fsp62rg",
+        "template_xo0oefs",
+        formData,
+        "mi8ZNbpwqHIFi8j8E"
+      )
+      .then(
+        () => {
+          setSuccessMsg("Email sent successfully!");
+          setFormData({ user_email: "", message: "" });
+        },
+        (error) => {
+          setSuccessMsg("Failed to send email. Try again later.");
+          console.error("Email error:", error);
+        }
+      );
+  };
+
   return (
     <div
+      id="contact"
       data-aos="fade-up"
       className="py-16 max-w-[1280px] mx-auto px-5 md:px-0"
     >
@@ -49,19 +83,17 @@ const Contact = () => {
               <FaFacebookSquare size={35} />
             </a>
           </div>
-          <div className="flex gap-5">
-            <button className="flex justify-center items-center gap-1 btn text-[16px] border-[#068e79] bg-[#068e79] shadow-none">
-              <BsTelephone />
-              Contact
-            </button>
-            <button className="flex justify-center items-center gap-1  btn text-[16px] shadow-none bg-transparent border border-[#068e79] text-[#068e79]">
-              <FiDownload /> Download CV
-            </button>
+          <div>
+            <a href="/dayal-cv.pdf" download>
+              <button className="flex justify-center items-center gap-1  btn text-[16px] shadow-none bg-transparent border border-[#068e79] text-[#068e79]">
+                <FiDownload /> Download CV
+              </button>
+            </a>
           </div>
         </div>
-        <div className="border border-[#068e79] rounded-2xl w-full p-5">
+        <div className="border border-[#068e79] rounded-2xl w-full h-[336px] p-5">
           <h1 className="text-2xl font-bold pb-3">Mail Me</h1>
-          <fieldset className="space-y-5">
+          {/* <fieldset className="space-y-5">
             <div className="flex flex-col gap-2">
               <label>Email</label>
               <input
@@ -85,7 +117,36 @@ const Contact = () => {
               type="submit"
               value="Submit"
             />
-          </fieldset>
+          </fieldset> */}
+          <form onSubmit={sendEmail} className="flex flex-col gap-4">
+            <input
+              type="email"
+              name="user_email"
+              placeholder="Your Email"
+              required
+              value={formData.user_email}
+              onChange={handleChange}
+              className="border px-3 py-2 rounded"
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+              value={formData.message}
+              onChange={handleChange}
+              className="border px-3 py-2 rounded"
+              rows="5"
+            ></textarea>
+            <button
+              type="submit"
+              className="bg-[#068e79] text-white py-2 rounded hover:bg-[#056a5d] transition"
+            >
+              Submit
+            </button>
+            {successMsg && (
+              <p className="text-green-600 font-medium mt-2">{successMsg}</p>
+            )}
+          </form>
         </div>
       </div>
     </div>

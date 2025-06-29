@@ -1,27 +1,34 @@
 import React from "react";
 import { TiThMenu } from "react-icons/ti";
-import { Link, NavLink } from "react-router";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <Link to="home" smooth={true} duration={500}>
+          Home
+        </Link>
       </li>
       <li>
-        <NavLink to="/about">About Me</NavLink>
+        <Link to="about" smooth={true} duration={500}>
+          About Me
+        </Link>
       </li>
       <li>
-        <NavLink to="/skills">Skills</NavLink>
+        <Link to="skills" smooth={true} duration={500}>
+          Skills
+        </Link>
       </li>
       <li>
-        <NavLink to="/education">Education</NavLink>
+        <Link to="projects" smooth={true} duration={500}>
+          Projects
+        </Link>
       </li>
       <li>
-        <NavLink to="/projects">Projects</NavLink>
-      </li>
-      <li>
-        <NavLink to="/contact">Contact</NavLink>
+        <Link to="contact" smooth={true} duration={500}>
+          Contact
+        </Link>
       </li>
     </>
   );
@@ -98,9 +105,14 @@ const Navbar = () => {
           </label>
         </div>
         <div className="navbar-end mr-2">
-          <a className="btn bg-[#068e79] shadow-none border border-[#15564c]">
+          <Link
+            className="btn bg-[#068e79] shadow-none border border-[#15564c]"
+            to="contact"
+            smooth={true}
+            duration={500}
+          >
             Hire Me
-          </a>
+          </Link>
         </div>
       </div>
     </div>
