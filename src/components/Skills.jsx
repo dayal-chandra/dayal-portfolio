@@ -10,41 +10,52 @@ import {
   FaReact,
   FaNodeJs,
   FaGithub,
+  FaCode,
 } from "react-icons/fa";
-import { SiTailwindcss, SiExpress, SiMongodb } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiExpress,
+  SiMongodb,
+  SiFirebase,
+  SiReactrouter,
+  SiJsonwebtokens,
+  SiVercel,
+  SiNetlify,
+  SiFigma,
+} from "react-icons/si";
 
 const skill = [
   {
-    icon: <FaHtml5 />,
+    icon: <FaHtml5 className="text-[#E34F26]" />,
     title: "HTML5",
     description:
       "The foundation of web pages using semantic and accessible markup.",
   },
   {
-    icon: <FaCss3Alt />,
+    icon: <FaCss3Alt className="text-[#1572B6]" />,
     title: "CSS3",
     description:
       "Styling and layout techniques to craft beautiful, responsive designs.",
   },
   {
-    icon: <SiTailwindcss />,
+    icon: <SiTailwindcss className="text-[#06B6D4]" />,
     title: "Tailwind CSS",
     description:
       "Utility-first CSS framework for building modern and fast UIs.",
   },
   {
-    icon: <FaJs />,
+    icon: <FaJs className="text-[#F7DF1E]" />,
     title: "JavaScript",
     description: "Adds dynamic behavior and interactivity to websites.",
   },
   {
-    icon: <FaReact />,
+    icon: <FaReact className="text-[#61DAFB]" />,
     title: "React.js",
     description:
       "Builds fast, component-based user interfaces for web applications.",
   },
   {
-    icon: <FaNodeJs />,
+    icon: <FaNodeJs className="text-[#68A063]" />,
     title: "Node.js",
     description:
       "Server-side JavaScript environment for building scalable backend systems.",
@@ -56,7 +67,7 @@ const skill = [
       "Minimalist web framework for Node.js to build APIs and backend logic.",
   },
   {
-    icon: <SiMongodb />,
+    icon: <SiMongodb className="text-[#4DB33D]" />,
     title: "MongoDB",
     description: "NoSQL database designed for flexible, scalable data storage.",
   },
@@ -65,6 +76,48 @@ const skill = [
     title: "Git & GitHub",
     description:
       "Version control and collaboration tools for efficient development.",
+  },
+  {
+    icon: <SiFirebase className="text-[#FFA611]" />,
+    title: "Firebase",
+    description:
+      "For real-time databases, authentication, and cloud hosting, enabling rapid development.",
+  },
+  {
+    icon: <SiReactrouter className="text-[#CA4245]" />,
+    title: "React Router",
+    description:
+      "Declarative routing solution for React, enabling seamless navigation in single-page applications.",
+  },
+  {
+    icon: <SiJsonwebtokens className="text-yellow-500" />,
+    title: "JWT",
+    description:
+      "Secure token-based authentication for protecting APIs and user data in web applications.",
+  },
+  {
+    icon: <SiVercel />,
+    title: "Vercel",
+    description:
+      "Cloud platform for frontend deployment, optimized for Next.js and modern static sites.",
+  },
+  {
+    icon: <SiNetlify className="text-[#00C7B7]" />,
+    title: "Netlify",
+    description:
+      "Fast and reliable platform for hosting static sites and deploying frontend applications.",
+  },
+  {
+    icon: <FaCode className="text-[#007ACC]" />,
+    title: "VS Code",
+    description:
+      "Powerful code editor with a rich ecosystem of extensions for web development.",
+  },
+  {
+    icon: <SiFigma className="text-[#F24E1E]" />,
+    title: "Figma",
+    description:
+      "Collaborative design tool for creating UI/UX prototypes, wireframes, and visual assets.",
   },
 ];
 

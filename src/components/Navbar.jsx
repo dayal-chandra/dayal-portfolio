@@ -52,7 +52,12 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <Link to="/" className="text-3xl font-bold">
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            className="text-3xl font-bold"
+          >
             DA<span className="text-[#068e79]">Y</span>AL
           </Link>
         </div>

@@ -55,7 +55,26 @@ const Projects = () => {
                 Filtering functionality according rent amount.
               </li>
               <li className="list-disc">Users can manage their posts.</li>
+              <li className="list-disc">Users can't like their own posts.</li>
             </ul>
+
+            <div className="flex flex-wrap gap-2 mt-3">
+              <span className="px-2 py-1 bg-gray-200 text-gray-800 text-sm rounded-md">
+                React
+              </span>
+              <span className="px-2 py-1 bg-gray-200 text-gray-800 text-sm rounded-md">
+                Tailwind CSS
+              </span>
+              <span className="px-2 py-1 bg-gray-200 text-gray-800 text-sm rounded-md">
+                JavaScript
+              </span>
+              <span className="px-2 py-1 bg-gray-200 text-gray-800 text-sm rounded-md">
+                Node.js
+              </span>
+              <span className="px-2 py-1 bg-gray-200 text-gray-800 text-sm rounded-md">
+                MongoDB
+              </span>
+            </div>
 
             <div className="space-x-2 pt-4">
               <a
@@ -119,6 +138,24 @@ const Projects = () => {
                 Manage event like delete and update.
               </li>
             </ul>
+
+            <div className="flex flex-wrap gap-2 mt-3">
+              <span className="px-2 py-1 bg-gray-200 text-gray-800 text-sm rounded-md">
+                React
+              </span>
+              <span className="px-2 py-1 bg-gray-200 text-gray-800 text-sm rounded-md">
+                Tailwind CSS
+              </span>
+              <span className="px-2 py-1 bg-gray-200 text-gray-800 text-sm rounded-md">
+                JavaScript
+              </span>
+              <span className="px-2 py-1 bg-gray-200 text-gray-800 text-sm rounded-md">
+                Node.js
+              </span>
+              <span className="px-2 py-1 bg-gray-200 text-gray-800 text-sm rounded-md">
+                MongoDB
+              </span>
+            </div>
 
             <div className="space-x-2 pt-4">
               <a
