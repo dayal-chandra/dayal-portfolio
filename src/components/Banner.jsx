@@ -11,7 +11,7 @@ const Banner = () => {
   return (
     <div
       id="home"
-      className="bg-[url(/bg.png)] bg-no-repeat bg-cover min-h-screen px-5 md:px-0"
+      className="bg-[url(/bg.png)] bg-no-repeat bg-cover min-h-[650px] px-5 md:px-0"
     >
       <div className="max-w-[1280px] mx-auto flex flex-col-reverse md:flex-row justify-between in-center gap-10">
         <div
