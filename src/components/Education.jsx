@@ -8,7 +8,7 @@ const Education = () => {
           Education
         </h2>
 
-        <div className="flex flex-col md:flex-row items-center border border-[#068e79] shadow-md rounded-2xl p-6 hover:scale-105 transition-transform duration-300">
+        <div className="flex flex-col md:flex-row items-center border border-[#068e79] shadow-md rounded-2xl p-6 hover:scale-105 transition-transform duration-300 hover:shadow-[0_0_15px_#068e79]">
           <div className="text-[#068e79] text-6xl mb-4 md:mb-0 md:mr-6">
             <FaUniversity />
           </div>

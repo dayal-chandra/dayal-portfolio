@@ -113,6 +113,7 @@ const Navbar = ({ activeRoute, setActiveRoute }) => {
             smooth={true}
             duration={500}
             className="text-3xl font-bold"
+            onClick={() => handleSetActive("home")}
           >
             DA<span className="text-[#068e79]">Y</span>AL
           </Link>

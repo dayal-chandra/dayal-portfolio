@@ -42,12 +42,12 @@ const Banner = ({ setActiveRoute }) => {
             and MongoDB, delivering modern, scalable solutions.
           </p>
 
-          <div className="py-4 flex justify-start items-center gap-5 text-[#068e79] ">
+          <div className="py-4 flex justify-start items-center gap-5 text-[#068e79]">
             <a
               href="https://github.com/dayal-chandra"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white"
+              className="hover:text-white transform transition duration-300 hover:scale-150 "
             >
               <FaGithub size={35} />
             </a>
@@ -55,7 +55,7 @@ const Banner = ({ setActiveRoute }) => {
               href="https://linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white"
+              className="hover:text-white transform transition duration-300 hover:scale-150 "
             >
               <IoLogoLinkedin size={35} />
             </a>
@@ -63,17 +63,18 @@ const Banner = ({ setActiveRoute }) => {
               href="https://web.facebook.com/dayal.chandra.562"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white"
+              className="hover:text-white transform transition duration-300 hover:scale-150 "
             >
               <FaFacebookSquare size={35} />
             </a>
             <a
               href="mailto:dayalchandra511@gmail.com"
-              className="hover:text-white"
+              className="hover:text-white transform transition duration-300 hover:scale-150 "
             >
               <MdEmail size={43} />
             </a>
           </div>
+
           <div className="flex gap-5 pb-10">
             <Link
               to="contact"

@@ -23,7 +23,10 @@ const Projects = () => {
         My Recent Projects
       </h1>
       <div className="space-y-5">
-        <div className="w-full border border-[#068e79] rounded-2xl p-5 flex flex-col md:flex-row justify-center items-center gap-5">
+        <div
+          data-aos="fade-up"
+          className="w-full border border-[#068e79] rounded-2xl p-5 flex flex-col md:flex-row justify-center items-center gap-5"
+        >
           <div className="w-full md:w-1/2">
             <Swiper
               modules={[Pagination, Autoplay]}
@@ -31,6 +34,7 @@ const Projects = () => {
               slidesPerView={1}
               pagination={{ clickable: true }}
               autoplay={{ delay: 2500, disableOnInteraction: false }}
+              className="rounded-2xl"
             >
               <SwiperSlide>
                 <img src={room1} alt="project slide" />
@@ -104,27 +108,11 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="w-full border border-[#068e79] rounded-2xl p-5 flex flex-col md:flex-row justify-center items-center gap-5">
-          <div className="w-full md:w-1/2">
-            <Swiper
-              modules={[Pagination, Autoplay]}
-              spaceBetween={30}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 2500, disableOnInteraction: false }}
-            >
-              <SwiperSlide>
-                <img src={neighbor1} alt="project slide" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={neighbor2} alt="project slide" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={neighbor3} alt="project slide" />
-              </SwiperSlide>
-            </Swiper>
-          </div>
-          <div className="w-full md:w-1/2">
+        <div
+          data-aos="fade-up"
+          className="w-full border border-[#068e79] rounded-2xl p-5 flex flex-col-reverse md:flex-row justify-center items-center gap-5"
+        >
+          <div className="w-full md:w-1/2 md:pl-5">
             <h1 className="text-2xl font-bold">Neighborly</h1>
             <p>
               In this platform users can create, manage and join local events
@@ -183,6 +171,27 @@ const Projects = () => {
                 Server Code
               </a>
             </div>
+          </div>
+
+          <div className="w-full md:w-1/2">
+            <Swiper
+              modules={[Pagination, Autoplay]}
+              spaceBetween={30}
+              slidesPerView={1}
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 2500, disableOnInteraction: false }}
+              className="rounded-2xl"
+            >
+              <SwiperSlide>
+                <img src={neighbor1} alt="project slide" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={neighbor2} alt="project slide" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={neighbor3} alt="project slide" />
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>

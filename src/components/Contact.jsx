@@ -49,7 +49,10 @@ const Contact = () => {
         Contact Me
       </h1>
       <div className="flex flex-col md:flex-row justify-between items-center gap-20">
-        <div className="border border-[#068e79] rounded-2xl w-full h-[336px] p-5">
+        <div
+          data-aos="fade-up"
+          className="border border-[#068e79] rounded-2xl w-full h-[336px] p-5 "
+        >
           <h1 className="text-2xl font-bold pb-3">Contact Info</h1>
           <p>
             <span className="font-bold">Phone :</span> +8801790102109
@@ -66,7 +69,7 @@ const Contact = () => {
               href="https://github.com/dayal-chandra"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#068e7aaf]"
+              className="transform transition duration-300 hover:scale-150"
             >
               <FaGithub size={35} />
             </a>
@@ -74,7 +77,7 @@ const Contact = () => {
               href="https://linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#068e7aaf]"
+              className="transform transition duration-300 hover:scale-150"
             >
               <IoLogoLinkedin size={35} />
             </a>
@@ -82,14 +85,14 @@ const Contact = () => {
               href="https://web.facebook.com/dayal.chandra.562"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#068e7aaf]"
+              className="transform transition duration-300 hover:scale-150"
             >
               <FaFacebookSquare size={35} />
             </a>
 
             <a
               href="mailto:dayalchandra511@gmail.com"
-              className="hover:text-[#068e7aaf]"
+              className="transform transition duration-300 hover:scale-150"
             >
               <MdEmail size={43} />
             </a>
@@ -106,8 +109,11 @@ const Contact = () => {
             </button>
           </div>
         </div>
-        <div className="border border-[#068e79] rounded-2xl w-full h-[336px] p-5">
-          <h1 className="text-2xl font-bold pb-3">Mail Me</h1>
+        <div
+          data-aos="fade-up"
+          className="border border-[#068e79] rounded-2xl w-full h-[336px] p-5 "
+        >
+          <h1 className="text-2xl font-bold pb-3">Message Me</h1>
           <form onSubmit={sendEmail} className="flex flex-col gap-4">
             <input
               type="email"
