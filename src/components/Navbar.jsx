@@ -90,7 +90,7 @@ const Navbar = ({ activeRoute, setActiveRoute }) => {
   );
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-[#15564c] shadow-sm">
+    <div className="fixed top-0 left-0 w-full z-50 bg-[#15564c] shadow-sm ">
       <div className="navbar max-w-[1280px] mx-auto px-0 text-white backdrop-blur-sm">
         <div className="navbar-start">
           <div className="dropdown">
