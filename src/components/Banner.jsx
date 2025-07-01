@@ -38,8 +38,8 @@ const Banner = ({ setActiveRoute }) => {
             />
           </h2>
           <p className="text-[18px]">
-            I specialize in building full-stack projects with Node.js, Express,
-            and MongoDB, delivering modern, scalable solutions.
+            I help businesses and individuals build responsive, fast, and
+            scalable full-stack web applications using the MERN stack.
           </p>
 
           <div className="py-4 flex justify-start items-center gap-5 text-[#068e79]">
@@ -95,7 +95,11 @@ const Banner = ({ setActiveRoute }) => {
           </div>
         </div>
         <div data-aos="fade-up" className="w-full mt-20">
-          <img className="w-full rounded-t-4xl" src={photo} alt="" />
+          <img
+            className="w-full rounded-t-4xl"
+            src={photo}
+            alt="Profile of Dayal Chandra - Full Stack Developer"
+          />
         </div>
       </div>
     </div>

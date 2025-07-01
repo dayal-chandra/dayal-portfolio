@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -11,6 +11,7 @@ import room3 from "/room3.png";
 import neighbor1 from "/neighbor1.png";
 import neighbor2 from "/neighbor2.png";
 import neighbor3 from "/neighbor3.png";
+import { TiArrowRightThick } from "react-icons/ti";
 
 const Projects = () => {
   return (
@@ -193,6 +194,18 @@ const Projects = () => {
               </SwiperSlide>
             </Swiper>
           </div>
+        </div>
+
+        <div className="flex justify-center items-center pt-5">
+          <a
+            href="https://github.com/dayal-chandra?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="flex justify-center items-center gap-1  btn text-[16px] shadow-none bg-transparent border border-[#068e79] text-[#068e79] hover:bg-[#068e79] hover:text-white">
+              See All Projects <TiArrowRightThick size={20} />
+            </button>
+          </a>
         </div>
       </div>
     </div>
