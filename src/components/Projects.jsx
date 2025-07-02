@@ -165,7 +165,7 @@ const Projects = () => {
               </a>
               <a
                 className="btn bg-[#068e79] text-white hover:text-[#068e79] hover:bg-transparent hover:border-[#068e79]"
-                href="https://github.com/dayal-chandra/social-event"
+                href="https://github.com/dayal-chandra/a11-server"
                 target="_blank"
                 rel="noopener noreferrer"
               >

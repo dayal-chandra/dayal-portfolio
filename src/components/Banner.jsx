@@ -38,8 +38,8 @@ const Banner = ({ setActiveRoute }) => {
             />
           </h2>
           <p className="text-[18px]">
-            I help businesses and individuals build responsive, fast, and
-            scalable full-stack web applications using the MERN stack.
+            I help businesses and startups turn ideas into scalable, full-stack
+            web applications with React, Node.js, and MongoDB.
           </p>
 
           <div className="py-4 flex justify-start items-center gap-5 text-[#068e79]">
