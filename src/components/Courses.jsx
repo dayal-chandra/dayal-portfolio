@@ -1,36 +1,31 @@
-import { FaUniversity } from "react-icons/fa";
-import Courses from "./Courses";
+import React from "react";
+import { PiCertificateBold } from "react-icons/pi";
 
-const Education = () => {
+const Courses = () => {
   return (
     <section data-aos="fade-up" className="pt-16" id="education">
-      <div className="max-w-4xl mx-auto px-4">
+      <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 ">
-          Education
+          Certifications & Courses
         </h2>
-
         <div className="flex flex-col md:flex-row items-center border border-[#068e79] shadow-md rounded-2xl p-6 hover:scale-105 transition-transform duration-300 hover:shadow-[0_0_15px_#068e79]">
           <div className="text-[#068e79] text-6xl mb-4 md:mb-0 md:mr-6">
-            <FaUniversity />
+            <PiCertificateBold />
           </div>
 
           <div>
             <h3 className="text-xl md:text-2xl font-semibold mb-2 text-[#068e79]">
-              B.Sc in Physics
+              Web Development Level-1
             </h3>
             <p>
-              Pursuing Bachelor of Science in Physics with strong foundation in
-              analytical thinking and problem-solving.
+              Trained Full Stack Developer with hands-on project experience from
+              Programming Hero's rigorous web development program.
             </p>
           </div>
-        </div>
-
-        <div className="my-10">
-          <Courses></Courses>
         </div>
       </div>
     </section>
   );
 };
 
-export default Education;
+export default Courses;
