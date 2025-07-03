@@ -52,7 +52,7 @@ const Banner = ({ setActiveRoute }) => {
               <FaGithub size={35} />
             </a>
             <a
-              href="https://linkedin.com/"
+              href="www.linkedin.com/in/dayal-chandra"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transform transition duration-300 hover:scale-150 "
