@@ -16,7 +16,7 @@ const Footer = () => {
             GitHub
           </a>
           <a
-            href="www.linkedin.com/in/dayal-chandra"
+            href="https://www.linkedin.com/in/dayal-chandra"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#068e79]"

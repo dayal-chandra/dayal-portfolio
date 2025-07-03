@@ -74,7 +74,7 @@ const Contact = () => {
               <FaGithub size={35} />
             </a>
             <a
-              href="www.linkedin.com/in/dayal-chandra"
+              href="https://www.linkedin.com/in/dayal-chandra"
               target="_blank"
               rel="noopener noreferrer"
               className="transform transition duration-300 hover:scale-150"
