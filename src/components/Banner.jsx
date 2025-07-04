@@ -13,10 +13,7 @@ const Banner = () => {
       className="bg-[url(/bg.png)] bg-no-repeat bg-cover min-h-[650px] px-5 md:px-0"
     >
       <div className="max-w-[1280px] mx-auto flex flex-col-reverse md:flex-row justify-between in-center gap-10">
-        <div
-          data-aos="fade-up"
-          className="w-full flex flex-col justify-center items-start text-white"
-        >
+        <div className="w-full flex flex-col justify-center items-start text-white">
           <h1 className="text-3xl md:text-5xl font-semibold">
             Hi I'm <br></br>
             <span className="text-5xl md:text-7xl font-bold text-[#068e79]">
@@ -81,7 +78,7 @@ const Banner = () => {
             </a>
           </div>
         </div>
-        <div data-aos="fade-up" className="w-full mt-20">
+        <div className="w-full mt-20">
           <img
             className="w-full rounded-t-4xl"
             src={photo}
