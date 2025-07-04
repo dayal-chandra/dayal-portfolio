@@ -17,14 +17,14 @@ const Banner = () => {
           data-aos="fade-up"
           className="w-full flex flex-col justify-center items-start text-white"
         >
-          <h1 className="text-3xl font-semibold">
+          <h1 className="text-3xl md:text-5xl font-semibold">
             Hi I'm <br></br>
-            <span className="text-5xl font-bold text-[#068e79]">
+            <span className="text-5xl md:text-7xl font-bold text-[#068e79]">
               Dayal Chandra
             </span>
           </h1>
 
-          <h2 className="text-2xl my-4">
+          <h2 className="text-2xl md:text-4xl my-4">
             <Typewriter
               words={["Full-Stack Developer", "MERN Stack Enthusiast"]}
               loop={true}

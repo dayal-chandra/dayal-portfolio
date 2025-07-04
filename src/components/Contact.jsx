@@ -61,7 +61,7 @@ const Contact = () => {
             <span className="font-bold">Email :</span> dayalchandra511@gmail.com
           </p>
           <p>
-            <span className="font-bold">Location :</span> Kurigram, Dhaka,
+            <span className="font-bold">Location :</span> Kurigram, Rangpur,
             Bangladesh
           </p>
           <div className="py-4 flex gap-5 justify-start items-center text-[#068e79]">
