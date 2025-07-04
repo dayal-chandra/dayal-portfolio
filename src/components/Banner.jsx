@@ -3,12 +3,10 @@ import photo from "/dayal.png";
 import { Typewriter } from "react-simple-typewriter";
 import { FaFacebookSquare, FaGithub } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
-import { BsTelephone } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
-import { Link } from "react-scroll";
 import { MdEmail } from "react-icons/md";
 
-const Banner = ({ setActiveRoute }) => {
+const Banner = () => {
   return (
     <div
       id="home"
@@ -75,20 +73,9 @@ const Banner = ({ setActiveRoute }) => {
             </a>
           </div>
 
-          <div className="flex gap-5 pb-10">
-            <Link
-              to="contact"
-              smooth={true}
-              duration={500}
-              onClick={() => setActiveRoute("contact")}
-            >
-              <button className="flex justify-center items-center gap-1 btn text-[16px] text-white border-[#068e79] bg-[#068e79] hover:bg-transparent shadow-none">
-                <BsTelephone />
-                Contact
-              </button>
-            </Link>
+          <div className="pb-10">
             <a href="/dayal-cv.pdf" download>
-              <button className="flex justify-center items-center gap-1  btn text-[16px] shadow-none bg-transparent border border-[#068e79] text-[#068e79] hover:bg-[#068e79] hover:text-white">
+              <button className="flex justify-center items-center gap-1  btn text-[16px] shadow-none bg-[#068e79] border border-[#068e79] text-white hover:bg-transparent">
                 <FiDownload /> Download CV
               </button>
             </a>
