@@ -104,7 +104,7 @@ const Contact = () => {
                 href="/dayal-cv.pdf"
                 download
               >
-                <FiDownload /> Download CV
+                Resume <FiDownload />
               </a>
             </button>
           </div>
