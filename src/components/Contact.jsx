@@ -101,7 +101,7 @@ const Contact = () => {
             <button className="  btn text-[16px] shadow-none bg-transparent border border-[#068e79] text-[#068e79] hover:text-white hover:bg-[#068e79]">
               <a
                 className="flex justify-center items-center gap-1"
-                href="/dayal-cv.pdf"
+                href="/Dayal-Chandra-Resume.pdf"
                 download
               >
                 Resume <FiDownload />
