@@ -91,13 +91,13 @@ const Navbar = ({ activeRoute, setActiveRoute }) => {
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-[#15564c] shadow-sm ">
-      <div className="navbar max-w-[1280px] mx-auto px-0 md:px-20 xl:px-0 text-white backdrop-blur-sm">
+      <div className="navbar max-w-[1280px] mx-auto px-5 md:px-20 xl:px-0 text-white ">
         <div className="navbar-start">
           <div className="dropdown">
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost  lg:hidden"
+              className="btn btn-ghost px-0  lg:hidden"
             >
               <TiThMenu size={25} />
             </div>
@@ -112,17 +112,28 @@ const Navbar = ({ activeRoute, setActiveRoute }) => {
             to="home"
             smooth={true}
             duration={500}
-            className="text-3xl font-bold"
+            className="text-3xl font-bold hidden lg:flex"
             onClick={() => handleSetActive("home")}
           >
             DA<span className="text-[#068e79]">Y</span>AL
           </Link>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navItems}</ul>
+        <div className="navbar-center">
+          <ul className="menu menu-horizontal px-1  hidden lg:flex">
+            {navItems}
+          </ul>
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            className="text-3xl font-bold lg:hidden"
+            onClick={() => handleSetActive("home")}
+          >
+            DA<span className="text-[#068e79]">Y</span>AL
+          </Link>
         </div>
 
-        <div className="navbar-end px-5 md:px-0">
+        <div className="navbar-end">
           <Link
             className="btn bg-white hover:bg-transparent text-[#087c6b] hover:text-white shadow-none border border-[#15564c] hover:border-white"
             to="contact"
