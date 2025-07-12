@@ -71,7 +71,7 @@ const Banner = () => {
           </div>
 
           <div className="pb-10">
-            <a href="/Dayal-Chandra-Resume.pdf" download>
+            <a href="/Resume-of-Dayal-Chandra.pdf" download>
               <button className="flex justify-center items-center gap-1  btn text-[16px] shadow-none bg-[#068e79] border border-[#068e79] text-white hover:bg-transparent">
                 Resume <FiDownload />
               </button>
