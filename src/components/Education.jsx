@@ -4,7 +4,7 @@ import Courses from "./Courses";
 const Education = () => {
   return (
     <section data-aos="fade-up" className="pt-16" id="education">
-      <div className="max-w-4xl mx-auto px-4">
+      <div className="max-w-4xl mx-auto px-5 md:px-20 xl:px-0">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 ">
           Education
         </h2>
