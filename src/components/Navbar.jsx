@@ -122,7 +122,7 @@ const Navbar = ({ activeRoute, setActiveRoute }) => {
           <ul className="menu menu-horizontal px-1">{navItems}</ul>
         </div>
 
-        <div className="navbar-end">
+        <div className="navbar-end px-5 md:px-0">
           <Link
             className="btn bg-white hover:bg-transparent text-[#087c6b] hover:text-white shadow-none border border-[#15564c] hover:border-white"
             to="contact"

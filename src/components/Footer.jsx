@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="bg-[#15564c] text-white py-6 mt-10">
-      <div className="max-w-[1280px] mx-auto px-5 md:px-20 lg:px-0 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
+      <div className="max-w-[1280px] mx-auto px-5 md:px-20 xl:px-0 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
         <p className="text-sm">
           © {new Date().getFullYear()} Dayal Chandra | MERN Stack Developer
         </p>
