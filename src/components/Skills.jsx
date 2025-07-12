@@ -124,7 +124,7 @@ const skill = [
 const Skills = () => {
   return (
     <section data-aos="fade-up" className="pt-16 overflow-visible" id="skills">
-      <div className="max-w-6xl mx-auto px-4 text-center overflow-visible">
+      <div className="max-w-7xl mx-auto px-5 md:px-20 xl:px-0 text-center overflow-visible">
         <h2 className="text-3xl md:text-4xl font-bold mb-10 ">My Skills</h2>
 
         <div className="relative overflow-visible">

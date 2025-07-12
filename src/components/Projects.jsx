@@ -18,7 +18,7 @@ const Projects = () => {
     <div
       id="projects"
       data-aos="fade-up"
-      className="pt-16 max-w-[1280px] mx-auto px-5 md:px-0"
+      className="pt-16 max-w-[1280px] mx-auto px-5 md:px-20 xl:px-0"
     >
       <h1 className="text-3xl md:text-4xl text-center font-bold pb-10">
         My Recent Projects

@@ -43,7 +43,7 @@ const Contact = () => {
     <div
       id="contact"
       data-aos="fade-up"
-      className="py-16 max-w-[1280px] mx-auto px-5 md:px-0"
+      className="py-16 max-w-[1280px] mx-auto px-5 md:px-20 xl:px-0"
     >
       <h1 className="text-3xl md:text-4xl text-center font-bold mb-10 ">
         Contact Me

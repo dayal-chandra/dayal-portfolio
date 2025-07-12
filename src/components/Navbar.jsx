@@ -91,7 +91,7 @@ const Navbar = ({ activeRoute, setActiveRoute }) => {
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-[#15564c] shadow-sm ">
-      <div className="navbar max-w-[1280px] mx-auto px-0 text-white backdrop-blur-sm">
+      <div className="navbar max-w-[1280px] mx-auto px-0 md:px-20 xl:px-0 text-white backdrop-blur-sm">
         <div className="navbar-start">
           <div className="dropdown">
             <div
@@ -122,7 +122,7 @@ const Navbar = ({ activeRoute, setActiveRoute }) => {
           <ul className="menu menu-horizontal px-1">{navItems}</ul>
         </div>
 
-        <div className="navbar-end mr-2">
+        <div className="navbar-end">
           <Link
             className="btn bg-white hover:bg-transparent text-[#087c6b] hover:text-white shadow-none border border-[#15564c] hover:border-white"
             to="contact"

@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="max-w-6xl mx-auto px-4 pt-16 flex flex-col md:flex-row items-center gap-10"
+      className="max-w-6xl mx-auto px-5 md:px-20 xl:px-0 pt-16 flex flex-col md:flex-row items-center gap-10"
     >
       <div data-aos="fade-up">
         <img

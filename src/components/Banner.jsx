@@ -10,9 +10,9 @@ const Banner = () => {
   return (
     <div
       id="home"
-      className="bg-[url(/bg.png)] bg-no-repeat bg-cover min-h-[650px] px-5 md:px-0"
+      className="bg-[url(/bg.png)] bg-no-repeat bg-cover min-h-[650px] "
     >
-      <div className="max-w-[1280px] mx-auto flex flex-col-reverse md:flex-row justify-between in-center gap-10">
+      <div className="max-w-[1280px] mx-auto px-5 md:px-20 xl:px-0 md:pt-24 xl:pt-0 flex flex-col-reverse md:flex-row justify-between in-center gap-10">
         <div className="w-full flex flex-col justify-center items-start text-white">
           <h1 className="text-3xl md:text-5xl font-semibold">
             Hi I'm <br></br>
